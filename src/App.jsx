@@ -129,10 +129,20 @@ function App() {
 
             </div>
           </div>
+        </div>
+      </section>
+        
+      
+      <section className='text-gray-700 border-t border-gray-200 'id='skills'>
+        <div className='text-center mb-20'>
+            <hi className="text-2xl sm:text-3xl font-medium mb-2 text-gray-900">Skills</hi>
+        
+          </div>
 
-          {/*カードのdivタグ   */}
-          <div className='flex flex-wrap'>
-            <div className='md:w-1/3 p-4'>
+
+          {/*スキルのdivタグ   */}
+        <div className='flex flex-wrap scroll-smooth hover:scroll-auto'>
+            <div className='md:w-1/3 p-4 '>
               <div className='bg-gray-100 rounded-lg p-8'>
                 <div className='flex items-center mb-3'>
                 
@@ -144,12 +154,15 @@ function App() {
                   </a>
                   </div>
                   <h2 className='text-gray-900 text-lg font-medium ml-2'>
-                  web
+                  プログラミング
                   </h2>
                 </div>
                 <div>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae earum optio ab perspiciatis placeat ad nulla quae hic ducimus maiores voluptate cumque, praesentium itaque. Quasi eveniet rem sint mollitia corporis.
+                    ・Python/C++/Java
+                  </p>
+                  <p>
+                    ・React/Django
                   </p>
                   <a href="#" className='flex mt=3 text-green-500 text-ce
                   '>
@@ -170,12 +183,16 @@ function App() {
                   </svg>
                   </div>
                   <h2 className='text-gray-900 text-lg font-medium ml-2'>
-                  web
+                  好きなこと
                   </h2>
                 </div>
                 <div>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae earum optio ab perspiciatis placeat ad nulla quae hic ducimus maiores voluptate cumque, praesentium itaque. Quasi eveniet rem sint mollitia corporis.
+                    ・バレーボール(母校でコーチとして後輩たちを指導していました！)
+                  </p>
+                  <a href = "https://tenkovolley.jimdofree.com/" className='hover:text-blue-500 duration-300'>母校のバレーボール部のブログ</a>
+                  <p>
+                    ・料理
                   </p>
                   <a href="#" className='flex mt=3 text-green-500 text-ce
                   '>
@@ -196,12 +213,21 @@ function App() {
                   </svg>
                   </div>
                   <h2 className='text-gray-900 text-lg font-medium ml-2'>
-                  web
+                  資格など
                   </h2>
                 </div>
                 <div>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae earum optio ab perspiciatis placeat ad nulla quae hic ducimus maiores voluptate cumque, praesentium itaque. Quasi eveniet rem sint mollitia corporis.
+                    ・普通自動車第一種免許
+                  </p>
+                  <p>
+                    ・世界遺産検定2級
+                  </p>
+                  <p>
+                    ・SIG-ACIで学会発表
+                  </p>
+                  <p>
+                    ・TOEIC 790点
                   </p>
                   <a href="#" className='flex mt=3 text-green-500 text-ce
                   '>
@@ -214,8 +240,8 @@ function App() {
 
               </div>
             </div>
-          </div>
         </div>
+        
 
 
 
