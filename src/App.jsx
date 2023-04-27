@@ -2,26 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
-function but(){
-  return (
-    <div id= "3dprinterdetail "class= " z-0 fixed top-1/4  left-0 w-full  text-center bg-gray-100 ">
-    <button type='botton' id = "xmark">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    </button>
-    <h1>Top</h1>
-    <h1>jj</h1>
-
-
-
-  </div>
-
-
-
-  );
-}
+import "./components/WorksCard"
+import Card3dprinter from "./components/contents/Card3dprinter"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -258,18 +240,9 @@ function App() {
         </div>
 
 
-          {/*スキルのdivタグ   */}
+          {/*cardのdivタグ   */}
         <div className='flex flex-wrap scroll-smooth hover:scroll-auto'>
-            <div className='md:w-1/3 p-4 '>
-              
-
-              
-                <botton type="botton" id = "3dprinter" onClick={but()} >
-                  <img src = "./img/3dprinter.jpg" alt = ""  />
-
-                </botton>
-
-            </div>
+            <Card3dprinter />
             <div className='md:w-1/3 p-4'>
               <div className='bg-gray-100 rounded-lg p-8'>
                 <div className='flex items-center mb-3'>
