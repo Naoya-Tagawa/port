@@ -8,7 +8,7 @@ const WorksCard = (props) => {
       </div>
       <div className="bg-gray-100 p-6">
         <div className="flex items-center">
-          <h2 className="text-green-500 mx-10 mt-5 font-semibold h-10 text-center">
+          <h2 className="text-green-500 mx-auto mt-5 font-semibold h-10 text-center">
             {props.title}
           </h2>
         </div>
