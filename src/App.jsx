@@ -310,6 +310,18 @@ function App() {
 
 
       </section>
+
+
+      <section  className='text-gray-700 border-t border-gray-200 'id='career'>
+        <div className='text-center mb-20'>
+            <hi className="text-2xl sm:text-3xl font-medium mb-2 text-gray-900">Career</hi>
+        
+        </div>
+
+
+
+
+      </section>
         
   
 
