@@ -3,7 +3,7 @@ import WorksCard from "./WorksCard";
 
 const Model = (props) => {
     /* usestateは画面更新のために必要 */
-  const [showModal, setShowModel] = React.useState(false);
+  const [showModel, setShowModel] = React.useState(false);
   const [selectImg, setSelectImg] = React.useState(0);
 
   return (
@@ -17,7 +17,7 @@ const Model = (props) => {
           />
         </button>
       </div>
-      {showModal ? (
+      {showModel ? (
         <>
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="container relative my-6 p-4 max-w-6xl lg:max-w-4xl">
