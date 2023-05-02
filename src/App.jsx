@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import "./components/WorksCard"
 import Card3dprinter from "./components/contents/Card3dprinter"
+import WorksCard from './components/WorksCard'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -42,7 +43,8 @@ function App() {
           <div className='md:w-1/2 flex-grow mb-16 lg:pr-24 md:pr-16 text-center md:text-left'>
             <h1 className='text-3xl sm:text-6xl text-gray=900 font-medium mb-4' >
               ようこそ!
-              <br />田川直弥のポートフォリオへ<br />
+              <br />田川直弥の<br />
+              ポートフォリオへ
             </h1>
             <p className='mb-8 leading-relaxed'>
               このサイトでは田川直弥のことが大体わかるようになります
@@ -69,7 +71,7 @@ function App() {
 
         <div className='container px-5 py-24 mx-auto'>
           <div className='text-center mb-20'>
-            <hi className="text-2xl sm:text-3xl font-medium mb-2 text-gray-900">about me</hi>
+            <hi className="text-2xl sm:text-3xl font-medium mb-2 text-gray-900">About me</hi>
         
           </div>
 
@@ -143,10 +145,10 @@ function App() {
         </div>
 
 
-          {/*スキルのdivタグ   */}
+        {/*スキルのdivタグ   */}
         <div className='flex flex-wrap  scroll-smooth hover:scroll-auto '>
             <div className='w-full md:w-1/3 p-4 '>
-              <div className='bg-gray-100   rounded-lg p-8 '>
+              <div className='bg-gray-100  rounded-lg p-8 shadow-lg rounded-sm hover:shadow-2xl  hover:ring-4 ring-green-500 duration-200 md:h-full bg-gray-100 items-center'>
                 <div className='flex items-center mb-3'>
                 
                   <div className='bg-green-500 text-white rounded-full md:items-center'>
@@ -173,7 +175,7 @@ function App() {
               </div>
             </div>
             <div className='w-full md:w-1/3 p-4'>
-              <div className='bg-gray-100 rounded-lg p-8'>
+              <div className='bg-gray-100 rounded-lg p-8 shadow-lg rounded-sm hover:shadow-2xl  hover:ring-4 ring-green-500  duration-200 md:h-full bg-gray-100 items-center'>
                 <div className='flex items-center mb-3'>
                   <div className='bg-green-500 text-white rounded-full'>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -199,7 +201,7 @@ function App() {
               </div>
             </div>
             <div className='w-full md:w-1/3 p-4'>
-              <div className='bg-gray-100 rounded-lg p-8'>
+              <div className='bg-gray-100 rounded-lg p-8 shadow-lg rounded-sm hover:shadow-2xl  hover:ring-4 ring-green-500  duration-200 md:h-full bg-gray-100 items-center'>
                 <div className='flex items-center mb-3'>
                   <div className='bg-green-500 text-white rounded-full'>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 9C4 11.9611 5.60879 14.5465 8 15.9297V15.9999C8 18.2091 9.79086 19.9999 12 19.9999C14.2091 19.9999 16 18.2091 16 15.9999V15.9297C18.3912 14.5465 20 11.9611 20 9C20 4.58172 16.4183 1 12 1C7.58172 1 4 4.58172 4 9ZM16 13.4722C17.2275 12.3736 18 10.777 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 10.777 6.7725 12.3736 8 13.4722L10 13.4713V16C10 17.1045 10.8954 17.9999 12 17.9999C13.1045 17.9999 14 17.1045 14 15.9999V13.4713L16 13.4722Z" fill="currentColor" /><path d="M10 21.0064V21C10.5883 21.3403 11.2714 21.5351 12 21.5351C12.7286 21.5351 13.4117 21.3403 14 21V21.0064C14 22.111 13.1046 23.0064 12 23.0064C10.8954 23.0064 10 22.111 10 21.0064Z" fill="currentColor" />
@@ -242,68 +244,9 @@ function App() {
 
           {/*cardのdivタグ   */}
         <div className='flex flex-wrap scroll-smooth hover:scroll-auto'>
-            <Card3dprinter />
-            <div className='md:w-1/3 p-4'>
-              <div className='bg-gray-100 rounded-lg p-8'>
-                <div className='flex items-center mb-3'>
-                  <div className='bg-green-500 text-white rounded-full'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
-                  </svg>
-
-                  </div>
-                  <h2 className='text-gray-900 text-lg font-medium ml-2'>
-                  好きなこと
-                  </h2>
-                </div>
-                <div>
-                  <p>
-                    ・バレーボール(母校でコーチとして後輩たちを指導していました！)
-                  </p>
-                  <a href = "https://tenkovolley.jimdofree.com/" className='hover:text-blue-500 duration-300'>母校のバレーボール部のブログはこちら</a>
-                  <p>
-                    ・料理
-                  </p>
-                  <a href="#" className='flex mt=3 text-green-500 text-ce
-                  '>
-                    もっとみる
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L6 7H16L18 12L16 17H6L8 12ZM8.95407 15L10.1541 12L8.95407 9H14.6459L15.8459 12L14.6459 15H8.95407Z" fill="currentColor" /></svg>
-
-
-                  </a>
-                </div>
-
-              </div>
-            </div>
-            <div className='md:w-1/3 p-4'>
-              <div className='bg-gray-100 rounded-lg p-8'>
-                <div className='flex items-center mb-3'>
-                  <div className='bg-green-500 text-white rounded-full'>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 9C4 11.9611 5.60879 14.5465 8 15.9297V15.9999C8 18.2091 9.79086 19.9999 12 19.9999C14.2091 19.9999 16 18.2091 16 15.9999V15.9297C18.3912 14.5465 20 11.9611 20 9C20 4.58172 16.4183 1 12 1C7.58172 1 4 4.58172 4 9ZM16 13.4722C17.2275 12.3736 18 10.777 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 10.777 6.7725 12.3736 8 13.4722L10 13.4713V16C10 17.1045 10.8954 17.9999 12 17.9999C13.1045 17.9999 14 17.1045 14 15.9999V13.4713L16 13.4722Z" fill="currentColor" /><path d="M10 21.0064V21C10.5883 21.3403 11.2714 21.5351 12 21.5351C12.7286 21.5351 13.4117 21.3403 14 21V21.0064C14 22.111 13.1046 23.0064 12 23.0064C10.8954 23.0064 10 22.111 10 21.0064Z" fill="currentColor" />
-                  </svg>
-                  </div>
-                  <h2 className='text-gray-900 text-lg font-medium ml-2'>
-                  資格など
-                  </h2>
-                </div>
-                <div>
-                  <p>
-                    ・普通自動車第一種免許
-                  </p>
-                  <p>
-                    ・世界遺産検定2級
-                  </p>
-                  <p>
-                    ・SIG-ACIで学会発表
-                  </p>
-                  <p>
-                    ・TOEIC 790点
-                  </p>
-                  
-                </div>
-
-              </div>
-            </div>
+          <Card3dprinter />
+          <Card3dprinter/>
+          <Card3dprinter/>
         </div>
         
 
@@ -313,12 +256,18 @@ function App() {
 
 
       <section  className='text-gray-700 border-t border-gray-200 'id='career'>
+
         <div className='text-center mb-20'>
             <hi className="text-2xl sm:text-3xl font-medium mb-2 text-gray-900">Career</hi>
         
         </div>
 
+        <div className='bg-gray-100 mb-20'>
+          <h1>
+            kk
+          </h1>
 
+        </div>
 
 
       </section>
