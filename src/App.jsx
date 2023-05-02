@@ -5,25 +5,32 @@ import './App.css'
 import "./components/WorksCard"
 import Card3dprinter from "./components/contents/Card3dprinter"
 import WorksCard from './components/WorksCard'
-
+import { BsFillMoonStarsFill } from "react-icons/bs"
 function App() {
   const [count, setCount] = useState(0)
+  const [darkMode,setDarkMode] = useState(false)
+
   
   return (
-    <>
+    <div className={darkMode ? "dark":""}>
       <head>
         <title>
           Naoya's Portfolio
         </title>
       </head>
 
-      <header className='text-gray-700 border-b border-gray-200'>
+      <header className='text-gray-700 border-b border-gray-200 dark:bg-gray-900'>
       <div className='container flex mx-auto p-5 flex-col md:flex-row items-center'> 
-        <a href= "#" className='font-medium text-gray-900 mb-4 md:mb-0'> 
-          <span className='text-xl ml-3'>
-            Shincode
-          </span>
-        </a>
+        <div className='flex items-center '>
+          <a href= "#" className='font-medium text-gray-900 mb-4 md:mb-0'> 
+            <span className='text-xl ml-3'>
+              Shincode
+            </span>
+          </a>
+
+          <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl mx-5'/>
+          
+        </div>
         <nav className='md:ml-auto text-base'>
           <a  href = "#home" className='mr-5 hover:text-blue-400 duration-300' >Home</a> 
           <a  href = "#about" className='mr-5 hover:text-blue-400 duration-300'>About</a>
@@ -37,7 +44,7 @@ function App() {
 
 
       </header>
-
+      <body className='dark:bg-gray-900'>
       <section className='text-gray-700' id='home'> 
         <div className='flex container mx-auto py-20 px-20 flex-col md:flex-row items-center'>
           <div className='md:w-1/2 flex-grow mb-16 lg:pr-24 md:pr-16 text-center md:text-left'>
@@ -148,7 +155,7 @@ function App() {
         {/*スキルのdivタグ   */}
         <div className='flex flex-wrap  scroll-smooth hover:scroll-auto '>
             <div className='w-full md:w-1/3 p-4 '>
-              <div className='bg-gray-100  rounded-lg p-8 shadow-lg rounded-sm hover:shadow-2xl  hover:ring-4 ring-green-500 duration-200 md:h-full bg-gray-100 items-center'>
+              <div className='bg-gray-100 rounded-lg p-8 shadow-lg hover:shadow-2xl  hover:ring-4 ring-green-500 duration-200 md:h-full bg-gray-100 items-center'>
                 <div className='flex items-center mb-3'>
                 
                   <div className='bg-green-500 text-white rounded-full md:items-center'>
@@ -175,7 +182,7 @@ function App() {
               </div>
             </div>
             <div className='w-full md:w-1/3 p-4'>
-              <div className='bg-gray-100 rounded-lg p-8 shadow-lg rounded-sm hover:shadow-2xl  hover:ring-4 ring-green-500  duration-200 md:h-full bg-gray-100 items-center'>
+              <div className='bg-gray-100 rounded-lg p-8 shadow-lg hover:shadow-2xl  hover:ring-4 ring-green-500  duration-200 md:h-full bg-gray-100 items-center'>
                 <div className='flex items-center mb-3'>
                   <div className='bg-green-500 text-white rounded-full'>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -277,8 +284,8 @@ function App() {
     
 
     
-
-    </>
+      </body>
+    </div>
   );
 }
 
