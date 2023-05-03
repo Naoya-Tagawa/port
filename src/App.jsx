@@ -8,11 +8,7 @@ import {
   Routes,
 } from "react-router-dom";
 import "./components/WorksCard"
-import Card3dprinter from "./components/contents/Card3dprinter"
-import WorksCard from './components/WorksCard'
-import { BsFillMoonStarsFill } from "react-icons/bs"
 import {AnimatePresence} from "framer-motion"
-import {motion} from "framer-motion"
 import { useLocation } from 'react-router-dom'
 import Home from './components/home'
 function App() {
