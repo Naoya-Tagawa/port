@@ -8,11 +8,11 @@ const WorksCard = (props) => {
       </div>
       <div className="bg-gray-100 p-6">
         <div className="flex items-center">
-          <h2 className="text-green-500 mx-auto mt-5 font-semibold h-10 text-center">
+          <h2 className="text-green-500 mx-auto mt-5 text-lg font-semibold h-10 sp:text-base sm:text-lg text-center">
             {props.title}
           </h2>
         </div>
-        <div className="h-10 md:h-6 mb-4">
+        <div className="h-10 md:h-6 sp:text-base mb-4">
           <p>{props.comment}</p>
         </div>
       </div>

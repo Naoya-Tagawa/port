@@ -59,7 +59,7 @@ const Home = () => {
         </title>
       </head>
 
-      <header className='text-gray-700 border-b border-gray-200 dark:bg-gray-900'  >
+      <header className='text-gray-700 border-b border-gray-200 dark:bg-gray-900' >
       <div className='container flex mx-auto p-5 flex-col md:flex-row items-center'> 
         <div className='flex items-center '>
           <a href= "#" className='font-medium text-gray-900 mb-4 md:mb-0 '> 
@@ -84,38 +84,38 @@ const Home = () => {
 
 
       </header>
-      <body className='dark:bg-gray-900 container'>
-      <section className='text-gray-700 h-screen' id='home'> 
-        <div className='flex container mx-auto py-20 px-20 flex-col md:flex-row items-center'>
-          <div className='md:w-1/2 flex-grow mb-16 lg:pr-24 md:pr-16 text-center md:text-left'>
-            <h1 className='text-3xl sm:text-6xl text-gray=900 font-medium mb-4 dark:text-gray-100' >
+      <body className='dark:bg-gray-900  text-gray-700 h-screen' id='home'>
+      <div className='text-gray-700 h-screen mx-auto' id='home'> 
+        <div className='flex container  mt-10 mx-auto py-20 px-20 flex-col md:flex-row items-center'>
+          <div className='md:w-1/2 flex-grow mb-16 lg:pr-30 xl:w-full md:pr-15 text-center '>
+            <h1 className='text-3xl md:text-6xl xl:text-8xl text-gray-900 font-medium mb-4 dark:text-gray-100' >
               ようこそ!
               <br />田川直弥の<br />
               ポートフォリオへ
             </h1>
-            <p className='mb-8 leading-relaxed dark:text-gray-100' >
+            <p className='mb-8 leading-relaxed xl:text-3xl dark:text-gray-100' >
               このサイトでは田川直弥のことが大体わかるようになります
             </p>
             <button className='text-white bg-green-500 py-2 px-6 border-0 rounded text-lg hover:bg-green-600 duration-300 dark:text-gray-100'>
               contact
             </button>
           </div>
-          <div className='md:w-3/4 lg:max-w-lg '>
-            <img  class="hover:animate-bounce" src = "./img/denkyuinu.png" alt = "" />
+          <div className=' md:w-1/2 '>
+            <img  class="hover:animate-bounce" src = "./img/denkyuinu.png" alt = "" className='scale-110' />
           </div>
 
         </div>
-      </section>
+      </div>
 
 
 
 
 
-      <section className='text-gray-700 border-t border-gray-200 h-screen'id='about' ref={ref1}>
+      <section className='text-gray-700 border-t border-gray-200 'id='about' ref={ref1}>
         
 
 
-        <motion.div className='container px-5 py-5 mx-auto'variants={scrollcomponets}  initial="hidden" whileInView="visiable" viewport={{once:false,amount:0}} >
+        <motion.div className='container px-5 py-5 mx-auto md:items-center'variants={scrollcomponets}  initial="hidden" whileInView="visiable" viewport={{once:false,amount:0}} >
 
          
           <div className='text-center mb-10'>
@@ -196,7 +196,7 @@ const Home = () => {
 
         {/*refで、useInViewでこの要素を参照するようにする。}
         {/*スキルのdivタグ   */}
-        <motion.div className='flex flex-wrap  scroll-smooth hover:scroll-auto ' variants={scrollcomponets}  initial="hidden" whileInView="visiable" viewport={{once:false,amount:0}}>
+        <motion.div className='flex flex-wrap  scroll-smooth hover:scroll-auto mb-40' variants={scrollcomponets}  initial="hidden" whileInView="visiable" viewport={{once:false,amount:0}}>
             <div className='w-full md:w-1/3 p-4 '>
               <div className='bg-gray-100 rounded-lg p-8 shadow-lg hover:shadow-2xl  hover:ring-4 ring-green-500 duration-200 md:h-full items-center'>
                 <div className='flex items-center mb-3'>
@@ -251,7 +251,7 @@ const Home = () => {
               </div>
             </div>
             <div className='w-full md:w-1/3 p-4'>
-              <div className='bg-gray-100 rounded-lg p-8 shadow-lg rounded-sm hover:shadow-2xl  hover:ring-4 ring-green-500  duration-200 md:h-full bg-gray-100 items-center'>
+              <div className='bg-gray-100 rounded-lg p-8 shadow-lg  hover:shadow-2xl  hover:ring-4 ring-green-500  duration-200 md:h-full items-center'>
                 <div className='flex items-center mb-3'>
                   <div className='bg-green-500 text-white rounded-full dark:bg-gray-900'>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 9C4 11.9611 5.60879 14.5465 8 15.9297V15.9999C8 18.2091 9.79086 19.9999 12 19.9999C14.2091 19.9999 16 18.2091 16 15.9999V15.9297C18.3912 14.5465 20 11.9611 20 9C20 4.58172 16.4183 1 12 1C7.58172 1 4 4.58172 4 9ZM16 13.4722C17.2275 12.3736 18 10.777 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 10.777 6.7725 12.3736 8 13.4722L10 13.4713V16C10 17.1045 10.8954 17.9999 12 17.9999C13.1045 17.9999 14 17.1045 14 15.9999V13.4713L16 13.4722Z" fill="currentColor" /><path d="M10 21.0064V21C10.5883 21.3403 11.2714 21.5351 12 21.5351C12.7286 21.5351 13.4117 21.3403 14 21V21.0064C14 22.111 13.1046 23.0064 12 23.0064C10.8954 23.0064 10 22.111 10 21.0064Z" fill="currentColor" />
@@ -285,7 +285,7 @@ const Home = () => {
 
 
       </section>
-      <section className='text-gray-700 border-t border-gray-200 py-5 'id='portfolio'>
+      <section className='text-gray-700 border-t border-gray-200 py-5 mb-10'id='portfolio'>
         <div className='text-center mb-20'>
             <hi className="text-2xl sm:text-3xl font-medium mb-2 text-gray-900 dark:text-gray-100">Portfolio</hi>
         
@@ -330,22 +330,6 @@ const Home = () => {
       </body>
     
 
-      <div>
-          <div style={{ height: '2000px', backgroundColor: 'blue' }}>contents</div>
-          {/* refを与えた要素がウインドウ内に現れるとinViewがtrueになります */}
-          <motion.div ref={ref1} style={{ height: '300px' }} initial={{opacity:0}}
-                animate={{opacity:1}}
-                transition={{duration:1.6,delay:0.5}}>
-            
-              <div
-
-                style={{ backgroundColor: 'yellow' }}
-              >
-                <p>黄色の要素が出現！</p>
-              </div>
-            
-          </motion.div>
-        </div>
     </motion.div>
 
     
