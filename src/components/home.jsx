@@ -100,7 +100,7 @@ const Home = () => {
               contact
             </button>
           </div>
-          <div className=' md:w-1/2 '>
+          <div className=' md:w-1/2 ml-5'>
             <img  class="hover:animate-bounce" src = "./img/denkyuinu.png" alt = "" className='scale-110' />
           </div>
 
@@ -129,7 +129,7 @@ const Home = () => {
             </div>
 
           
-            <div className='md:w-1/2 flex-grow mb-16 lg:pl-10 md:pr-16 text-left  lg:text-left'>
+            <div className='md:w-1/2 flex-grow mb-16 md:ml-10 lg:pl-10 md:pr-16 text-left  lg:text-left'>
               <p className='text-xl  text-gray-800 font-normal mb-1 dark:text-gray-100' >
                名前:田川直弥
               </p>
@@ -285,7 +285,7 @@ const Home = () => {
 
 
       </section>
-      <section className='text-gray-700 border-t border-gray-200 py-5 mb-10'id='portfolio'>
+      <section className='text-gray-700 border-t border-gray-200 py-5 'id='portfolio'>
         <div className='text-center mb-20'>
             <hi className="text-2xl sm:text-3xl font-medium mb-2 text-gray-900 dark:text-gray-100">Portfolio</hi>
         
@@ -312,7 +312,10 @@ const Home = () => {
         
         </div>
 
-        <div className='bg-gray-100 mb-20'>
+        <div className=' text-gray-900 h-screen w-screen flex justify-center items-center'>
+          <div className='bg-gray-900'>
+
+          </div>
           <h1>
             kk
           </h1>
