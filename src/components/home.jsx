@@ -2,7 +2,7 @@ import { useEffect, useState ,useRef} from 'react'
 
 import '../App.css'
 import Card3dprinter from "./contents/Card3dprinter"
-
+import portfoliosite from './contents/portfolio'
 import { BsFillMoonStarsFill } from "react-icons/bs"
 import {motion , useAnimation} from "framer-motion"
 
@@ -68,7 +68,7 @@ const Home = () => {
             </span>
           </a>
 
-          <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl mx-5'/>
+          <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl mx-5 dark:bg-gray-100'/>
           
         </div>
         <nav className='md:ml-auto text-base'>
@@ -84,21 +84,17 @@ const Home = () => {
 
 
       </header>
-      <body className='dark:bg-gray-900  text-gray-700 h-screen' id='home'>
-      <div className='text-gray-700 h-screen mx-auto' id='home'> 
-        <div className='flex container  mt-10 mx-auto py-20 px-20 flex-col md:flex-row items-center'>
-          <div className='md:w-1/2 flex-grow mb-16 lg:pr-30 xl:w-full md:pr-15 text-center '>
-            <h1 className='text-3xl md:text-6xl xl:text-8xl text-gray-900 font-medium mb-4 dark:text-gray-100' >
+      <body className='dark:bg-gray-900  text-gray-700'>
+      <div className='text-gray-700 mx-auto' id='home'> 
+        <div className='flex  md:mt-10 mx-auto py-20 px-20 flex-col md:flex-row items-center'>
+          <div className='flex-grow  lg:pr-30 xl:w-full md:pr-15 text-center '>
+            <h1 className='text-4xl md:text-5xl xl:text-8xl text-gray-900 font-medium mb-4 dark:text-gray-100' >
               ようこそ!
-              <br />田川直弥の<br />
-              ポートフォリオへ
+              <br />田川直弥のポートフォリオへ<br />
             </h1>
             <p className='mb-8 leading-relaxed xl:text-3xl dark:text-gray-100' >
               このサイトでは田川直弥のことが大体わかるようになります
             </p>
-            <button className='text-white bg-green-500 py-2 px-6 border-0 rounded text-lg hover:bg-green-600 duration-300 dark:text-gray-100'>
-              contact
-            </button>
           </div>
           <div className=' md:w-1/2 ml-5'>
             <img  class="hover:animate-bounce" src = "./img/denkyuinu.png" alt = "" className='scale-110' />
@@ -111,20 +107,20 @@ const Home = () => {
 
 
 
-      <section className='text-gray-700 border-t border-gray-200 'id='about' ref={ref1}>
+      <section className='text-gray-700 border-t border-gray-200 dark:bg-gray-900'id='about' ref={ref1}>
         
 
 
         <motion.div className='container px-5 py-5 mx-auto md:items-center'variants={scrollcomponets}  initial="hidden" whileInView="visiable" viewport={{once:false,amount:0}} >
 
          
-          <div className='text-center mb-10'>
+          <div className='text-center mb-5'>
             <hi className="text-2xl sm:text-3xl font-medium mb-2 text-gray-900 dark:text-gray-100">About me</hi>
         
           </div>
 
           <div className='flex container mx-auto py-5 px-5   flex-col md:flex-row items-center '>
-            <div className='md:w-3/2 lg:max-w-lg'>
+            <div className='mb-5 md:w-3/2 lg:max-w-lg'>
               <img src = "./img/door.jpg" alt = "" />
             </div>
 
@@ -188,7 +184,7 @@ const Home = () => {
       </section>
         
       
-      <section className='text-gray-700 mt-40 border-t border-gray-200  'id='skills'>
+      <section className='dark:bg-gray-900 text-gray-700  border-t border-gray-200  'id='skills'>
         <div className='text-center mb-20 '>
             <hi className="text-2xl sm:text-3xl font-medium mb-2 text-gray-900 dark:text-gray-100">Skills</hi>
         
@@ -295,7 +291,7 @@ const Home = () => {
           {/*cardのdivタグ   */}
         <motion.div className='flex flex-wrap scroll-smooth hover:scroll-auto' variants={scrollcomponets}  initial="hidden" whileInView="visiable" viewport={{once:false,amount:0}}>
           <Card3dprinter />
-          <Card3dprinter/>
+          <portfoliosite />
           <Card3dprinter/>
         </motion.div>
         
