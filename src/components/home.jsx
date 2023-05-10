@@ -2,10 +2,9 @@ import { useEffect, useState ,useRef} from 'react'
 
 import '../App.css'
 import Card3dprinter from "./contents/Card3dprinter"
-import portfoliosite from './contents/portfolio'
+import Portfoliosite from './contents/portfolio'
 import { BsFillMoonStarsFill } from "react-icons/bs"
 import {motion , useAnimation} from "framer-motion"
-
 import { useInView } from 'react-intersection-observer';
 const Home = () => {
   const [count, setCount] = useState(0)
@@ -291,7 +290,7 @@ const Home = () => {
           {/*cardのdivタグ   */}
         <motion.div className='flex flex-wrap scroll-smooth hover:scroll-auto' variants={scrollcomponets}  initial="hidden" whileInView="visiable" viewport={{once:false,amount:0}}>
           <Card3dprinter />
-          <portfoliosite />
+          <Portfoliosite />
           <Card3dprinter/>
         </motion.div>
         

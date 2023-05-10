@@ -3,13 +3,13 @@ import Model from "../Model";
 /*import ButtonGithub from "./Icons/ButtonGithub";*/
 /*{export することでモジュールとしてimportできる}*/
 const path = "./img/";
-const portfoliosite = () => {
+const Portfoliosite = () => {
   return (
     <Model
       title={"portfolioをまとめたサイト"}
       subtitle={"レスポンシブなデザイン"}
       date={"April.2023"}
-      thumbnail={path + "denkyuuinu.jpg"}
+      thumbnail={path + "denkyuuinu.png"}
       description={
         <div>
         <h1>
@@ -35,4 +35,4 @@ const portfoliosite = () => {
   );
 };
 
-export default portfoliosite;
+export default Portfoliosite;
