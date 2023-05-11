@@ -8,7 +8,7 @@ const Model = (props) => {
 
   return (
     <>
-      <div className="flex w-full md:w-1/3 md:px-6 xl:px-1">
+      <div className="flex justify-center  w-full md:w-1/3 md:px-6 lg:px-6">
         <button onClick={() => setShowModel(true)}>
           <WorksCard
             title={props.title}

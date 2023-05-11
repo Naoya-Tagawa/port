@@ -9,7 +9,7 @@ const Portfoliosite = () => {
       title={"portfolioをまとめたサイト"}
       subtitle={"レスポンシブなデザイン"}
       date={"April.2023"}
-      thumbnail={path + "denkyuinu.png"}
+      thumbnail={path + "denkyudog.jpg"}
       description={
         <div>
         <h1>
