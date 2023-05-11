@@ -307,15 +307,29 @@ const Home = () => {
         
         </div>
 
-        <div className=' text-gray-900 h-screen w-screen flex justify-center items-center'>
-          <div className='bg-gray-900'>
+        <div className='flex justify-center items-center'>
+          <div className='bg-red-300'>
+            <hi className='text-2xl'>
+              2000
+
+            </hi>
 
           </div>
-          <h1>
-              sakuseichuu
-          </h1>
+          <div className='bg-gray-900'>
+
+
+          </div>
+
+          <div className='bg-green-300 w-1/3 whitespace-nowrap rounded px-2 py-1 before:absolute before:-translate-x-1/2 before:left-1/2 before:top-full before:border-4 before:border-t-black'>
+            <div>
+            <img className="" src="./img/SIG_ACI.jpg" alt="" />
+            </div>
+             
+          </div>
 
         </div>
+    
+      
 
 
       </section>
