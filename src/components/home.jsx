@@ -312,7 +312,7 @@ const Home = () => {
 
           </div>
           <h1>
-            kk
+              sakuseichuu
           </h1>
 
         </div>

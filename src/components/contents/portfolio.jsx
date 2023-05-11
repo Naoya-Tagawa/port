@@ -9,7 +9,7 @@ const Portfoliosite = () => {
       title={"portfolioをまとめたサイト"}
       subtitle={"レスポンシブなデザイン"}
       date={"April.2023"}
-      thumbnail={path + "denkyuuinu.png"}
+      thumbnail={path + "denkyuinu.png"}
       description={
         <div>
         <h1>
@@ -26,10 +26,6 @@ const Portfoliosite = () => {
                 </svg>
             </a>}
       imgPaths={[
-        path + "getinfo.jpg",
-        path + "system_problem.jpg",
-        path + "system_solve1.jpg",
-        path + "system_solve2.jpg",
       ]}
     />
   );

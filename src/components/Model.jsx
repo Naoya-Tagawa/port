@@ -8,7 +8,7 @@ const Model = (props) => {
 
   return (
     <>
-      <div className="flex justify-center md:w-1/3 p-4 md:px-6">
+      <div className="flex w-full md:w-1/3 md:px-6 xl:px-1">
         <button onClick={() => setShowModel(true)}>
           <WorksCard
             title={props.title}
@@ -67,8 +67,8 @@ const Model = (props) => {
                   </div>
                 </div>
                 {/*body*/}
-                <div className="">
-                  <div className="container py-2 flex-col md:flex-row items-center flex justify-center">
+                
+                  <div className="md:container py-2 flex-col md:flex-row items-center flex justify-center">
                     <div className="md:w-1/2 mb-4 px-4 md:mr-6 text-center">
                       <div className="mb-2">
                         <h3 className="text-lg text-green-500 font-semibold">
@@ -201,7 +201,7 @@ const Model = (props) => {
                       </div>
                     </div>
                   </div>
-                </div>
+
               </div>
             </div>
           </div>

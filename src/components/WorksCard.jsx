@@ -3,7 +3,7 @@ import React from "react";
 const WorksCard = (props) => {
   return (
     <div className="shadow-lg rounded-sm hover:shadow-2xl  hover:ring-4 ring-green-500 hover:scale-105 duration-200 md:h-full bg-gray-100 items-center">
-      <div className="object-contain md:h-60">
+      <div className="object-contain ">
         <img className="" src={props.imgPath} alt="" />
       </div>
       <div className="bg-gray-100 p-6">
