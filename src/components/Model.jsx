@@ -5,6 +5,7 @@ const Model = (props) => {
     /* usestateは画面更新のために必要 */
   const [showModel, setShowModel] = React.useState(false);
   const [selectImg, setSelectImg] = React.useState(0);
+  const [showimage,setshowimage] = React.useState(props.imgPaths.length);
 
   return (
     <>
@@ -89,6 +90,7 @@ const Model = (props) => {
                         </p>
                       </div>
                     </div>
+                    {showimage > 0 ?(
                     <div className="md:w-2/5 w-3/4 mb-4">
                       <div className="flex mx-auto mb-2 justify-center px-10">
                         <button className="p-2 hover:text-green-500 text-gray-500 duration-150" onClick={() => setSelectImg(0)}>
@@ -200,6 +202,7 @@ const Model = (props) => {
                         />
                       </div>
                     </div>
+                    ) :null}
                   </div>
 
               </div>

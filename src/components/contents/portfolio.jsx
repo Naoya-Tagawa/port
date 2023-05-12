@@ -15,9 +15,6 @@ const Portfoliosite = () => {
         <h1>
         このサイトです。できるだけレスポンシブなデザインを心がけています。
         </h1>
-        <a href = "https://www.youtube.com/watch?app=desktop&v=4T3aQo8mUr4&feature=youtu.be" className="text-green-500 hover:text-green-200 hover:scale-150">
-        デモ動画はこちら
-      </a>
       </div>
       }
       skills={"Javascript"}
@@ -27,6 +24,7 @@ const Portfoliosite = () => {
             </a>}
       imgPaths={[
       ]}
+      
     />
   );
 };
