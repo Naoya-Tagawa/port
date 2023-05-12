@@ -303,8 +303,16 @@ const Home = () => {
       <section  className='text-gray-700 border-t border-gray-200 'id='career'>
 
         <div className='text-center mb-20'>
-            <hi className="text-2xl sm:text-3xl font-medium mb-2 text-gray-900 dark:text-gray-100" >Career</hi>
+            <hi className="text-2xl sm:text-3xl font-medium  text-gray-900 dark:text-gray-100" >Career</hi>
         
+        </div>
+
+        <div className='bg-red-500 text-center'>
+          <h1 className='text-3xl font-medium text-gray-100'>
+            作成中です！！！
+          </h1>
+
+
         </div>
 
         <div className='flex justify-center items-center'>
