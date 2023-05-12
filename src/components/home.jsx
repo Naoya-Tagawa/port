@@ -63,7 +63,7 @@ const Home = () => {
         <div className='flex items-center '>
           <a href= "#" className='font-medium text-gray-900 mb-4 md:mb-0 '> 
             <span className='text-xl ml-3  dark:text-gray-100'>
-              Shincode
+              Naoya
             </span>
           </a>
 
