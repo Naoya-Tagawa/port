@@ -3,6 +3,7 @@ import { useEffect, useState ,useRef} from 'react'
 import '../App.css'
 import Card3dprinter from "./contents/Card3dprinter"
 import Portfoliosite from './contents/portfolio'
+import Find_difference from './contents/find_difference'
 import { BsFillMoonStarsFill } from "react-icons/bs"
 import {motion , useAnimation} from "framer-motion"
 import { useInView } from 'react-intersection-observer';
@@ -291,7 +292,7 @@ const Home = () => {
         <motion.div className='flex flex-wrap scroll-smooth hover:scroll-auto' variants={scrollcomponets}  initial="hidden" whileInView="visiable" viewport={{once:false,amount:0}}>
           <Card3dprinter />
           <Portfoliosite />
-          <Card3dprinter/>
+          <Find_difference/>
         </motion.div>
         
 
