@@ -6,7 +6,7 @@ const path = "./img/fd/";
 const Find_difference = () => {
   return (
     <Model
-      title={"画像の表示・画像処理・間違い探し手助け"}
+      title={"間違い探し手助けアプリ"}
       subtitle={"画像の相違点を探して間違い探しを解くのを支援します"}
       date={"March.2023 - April.2023"}
       thumbnail={path + "machigaisamune.jpg"}
@@ -15,6 +15,7 @@ const Find_difference = () => {
         <h1>
         画像の表示・アップロード・画像処理などができます。特徴量のマッチングにより画像の相違点を表示する機能があります。間違い探しが分からないときはぜひ!
         </h1>
+        <a href="https://django-render-1ace.onrender.com" className="text-green-500 hover:text-green-200 hover:scale-150">  こちらがwebアプリのリンクです </a>
       </div>
       }
       skills={"Python Django"}
