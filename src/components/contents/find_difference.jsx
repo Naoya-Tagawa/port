@@ -9,7 +9,7 @@ const Find_difference = () => {
       title={"間違い探し手助けアプリ"}
       subtitle={"画像の相違点を探して間違い探しを解くのを支援します"}
       date={"March.2023 - April.2023"}
-      thumbnail={path + "machigaisamune.jpg"}
+      thumbnail={path + "machisamune.jpg"}
       description={
         <div>
         <h1>

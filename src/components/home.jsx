@@ -76,7 +76,7 @@ const Home = () => {
           <a  href = "#about" className='mr-5 hover:text-blue-400 duration-300 dark:text-gray-100'>About</a>
           <a  href = "#skills" className='mr-5 hover:text-blue-400 duration-300 dark:text-gray-100'>Skills</a>
           <a  href = "#portfolio" className='mr-5 hover:text-blue-400 duration-300 dark:text-gray-100'>Portfolio</a>
-          <a  href = "#career" className=' hover:text-blue-400 duration-300 dark:text-gray-100'>Career</a>
+          {/*<a  href = "#career" className=' hover:text-blue-400 duration-300 dark:text-gray-100'>Career</a>*/}
         </nav>
 
 
@@ -300,7 +300,7 @@ const Home = () => {
 
       </section>
 
-
+    {/*
       <section  className='text-gray-700 border-t border-gray-200 'id='career'>
 
         <div className='text-center mb-20'>
@@ -342,7 +342,7 @@ const Home = () => {
 
 
       </section>
-        
+  */}
   
 
     
