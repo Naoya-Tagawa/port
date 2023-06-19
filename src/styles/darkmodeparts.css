@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .darkmodeparts {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    background:#0a0a0a;
+  }
