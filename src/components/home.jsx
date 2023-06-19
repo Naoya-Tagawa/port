@@ -122,7 +122,7 @@ const Home = () => {
         
           </div>
 
-          <div className='flex container mx-auto py-5 px-5   flex-col md:flex-row items-center '>
+          <div className='flex container mx-auto py-5 px-5   flex-col md:flex-row items-center justify-center'>
             <div className='mt-10 mb-10 scale-150 md:scale-100 md:w-3/2 lg:max-w-lg'>
               <img src = "./img/door.jpg" alt = "" />
             </div>
@@ -188,7 +188,7 @@ const Home = () => {
         
       
       <section className='dark:bg-gray-900 text-gray-700  border-t border-gray-200 h-screen 'id='skills'>
-        <div className='text-center mb-20 '>
+        <div className='text-center'>
             <hi className="text-2xl sm:text-3xl font-medium  text-gray-900 dark:text-gray-100">Skills</hi>
         
         </div>
