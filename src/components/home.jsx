@@ -7,7 +7,8 @@ import Find_difference from './contents/find_difference'
 import { BsFillMoonStarsFill } from "react-icons/bs"
 import {motion , useAnimation} from "framer-motion"
 import { useInView } from 'react-intersection-observer';
-
+import './career'
+import Career from './career'
 
 const Home = () => {
   const [count, setCount] = useState(0)
@@ -78,7 +79,7 @@ const Home = () => {
           <a  href = "#about" className='mr-5 hover:text-blue-400 duration-300 dark:text-gray-100'>About</a>
           <a  href = "#skills" className='mr-5 hover:text-blue-400 duration-300 dark:text-gray-100'>Skills</a>
           <a  href = "#portfolio" className='mr-5 hover:text-blue-400 duration-300 dark:text-gray-100'>Portfolio</a>
-          {/*<a  href = "#career" className=' hover:text-blue-400 duration-300 dark:text-gray-100'>Career</a>*/}
+          <a  href = "#career" className=' hover:text-blue-400 duration-300 dark:text-gray-100'>Career</a>
         </nav>
 
 
@@ -88,7 +89,7 @@ const Home = () => {
       </header>
       <body className='dark:bg-gray-900  text-gray-700'>
         
-      <div className='text-gray-700 mx-auto h-screen' id='home'> 
+      <div className='text-gray-700 mx-auto min-h-screen' id='home'> 
         <div className='flex items-center justify-center py-20 md:py-0 md:h-screen mx-auto flex-col md:flex-row'>
           <div className='flex-grow  lg:pr-30 xl:w-full md:pr-15 text-center '>
             <h1 className='text-4xl md:text-5xl xl:text-8xl text-gray-900 font-medium mb-4 dark:text-gray-100' >
@@ -110,7 +111,7 @@ const Home = () => {
 
 
 
-      <section className='text-gray-700 border-t border-gray-200 dark:bg-gray-900 h-screen'id='about' ref={ref1}>
+      <section className='text-gray-700 border-t min-h-screen border-gray-200 dark:bg-gray-900 h-screen'id='about' ref={ref1}>
         
 
 
@@ -128,7 +129,7 @@ const Home = () => {
             </div>
 
           
-            <div className='md:w-1/2 flex-grow mb-16 md:ml-10 lg:pl-10 md:pr-16 text-left  lg:text-left'>
+            <div className='md:w-1/2 flex-grow mt-10 mb-16 md:ml-10 lg:pl-10 md:pr-16 text-left  lg:text-left'>
               <p className='text-xl  text-gray-800 font-normal mb-1 dark:text-gray-100' >
                名前:田川直弥
               </p>
@@ -187,8 +188,8 @@ const Home = () => {
       </section>
         
       
-      <section className='dark:bg-gray-900 text-gray-700  border-t border-gray-200 h-screen 'id='skills'>
-        <div className='text-center'>
+      <section className='dark:bg-gray-900 text-gray-700  border-t border-gray-200  'id='skills'>
+        <div className='text-center py-5'>
             <hi className="text-2xl sm:text-3xl font-medium  text-gray-900 dark:text-gray-100">Skills</hi>
         
         </div>
@@ -288,15 +289,15 @@ const Home = () => {
 
 
       </section>
-      <section className='text-gray-700 border-t border-gray-200 py-5 'id='portfolio'>
-        <div className='text-center mb-20'>
+      <section className='text-gray-700 min-h-screen border-t border-gray-200 py-5'id='portfolio'>
+        <div className='text-center'>
             <hi className="text-2xl sm:text-3xl font-medium mb-2 text-gray-900 dark:text-gray-100">Portfolio</hi>
         
         </div>
 
 
           {/*cardのdivタグ   */}
-        <motion.div className='flex flex-wrap scroll-smooth hover:scroll-auto items-center justify-center h-screen' variants={scrollcomponets}  initial="hidden" whileInView="visiable" viewport={{once:false,amount:0}}>
+        <motion.div className='flex flex-wrap scroll-smooth hover:scroll-auto items-center justify-center md:h-screen' variants={scrollcomponets}  initial="hidden" whileInView="visiable" viewport={{once:false,amount:0}}>
           <Card3dprinter />
           <Portfoliosite />
           <Find_difference/>
@@ -307,53 +308,21 @@ const Home = () => {
 
       </section>
 
-    {/*
-      <section  className='text-gray-700 border-t border-gray-200 'id='career'>
+      
 
-        <div className='text-center mb-20'>
-            <hi className="text-2xl sm:text-3xl font-medium  text-gray-900 dark:text-gray-100" >Career</hi>
+      <section className='text-gray-700 border-t border-gray-200 py-5 min-h-screen'id='career'>
+        <div className='text-center py-5'>
+            <hi className="text-2xl sm:text-3xl font-medium  text-gray-900 dark:text-gray-100">Career</hi>
         
         </div>
 
-        <div className='bg-red-500 text-center'>
-          <h1 className='text-3xl font-medium text-gray-100'>
-            作成中です！！！
-          </h1>
 
-
-        </div>
-
-        <div className='flex justify-center items-center'>
-          <div className='bg-red-300'>
-            <hi className='text-2xl'>
-              2000
-
-            </hi>
-
-          </div>
-          <div className='bg-gray-900'>
-
-
-          </div>
-
-          <div className='bg-green-300 w-1/3 whitespace-nowrap rounded px-2 py-1 before:absolute before:-translate-x-1/2 before:left-1/2 before:top-full before:border-4 before:border-t-black'>
-            <div>
-            <img className="" src="./img/SIG_ACI.jpg" alt="" />
-            </div>
-             
-          </div>
-
-        </div>
-    
-      
-
+        <Career/>
 
       </section>
-  */}
-  
+
 
     
-
     
       </body>
     
