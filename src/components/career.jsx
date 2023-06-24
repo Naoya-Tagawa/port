@@ -2,8 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { motion, useScroll,useAnimation,useMotionValueEvent } from "framer-motion"
 import LiIcon from './contents/LiIcon';
 import '../index.css';
-{/*import s from '../styles/circle.css';*/}
-
+import '../styles/darkmodeparts.css';
 
 const Details = ({ positon, compony, companyLink, time, address, work ,img_path,darkMode,scrollref}) => {
     const ref = useRef(null);
@@ -28,7 +27,7 @@ const Details = ({ positon, compony, companyLink, time, address, work ,img_path,
     return <li ref={ ref } className={darkMode ? "dark":""}>
         <div className='flex justify-center'>
             <svg className="-rotate-90 w-[60px] h-[60px] xs:w-[40px] xs:h-[40px]" width="75" height="75" viewBox="0 0 100 100">
-                <circle cx="80" cy="53" r="20" className={darkMode ? s.darkmodeparts:s.white}/>
+                <circle cx="80" cy="53" r="20"className={darkMode ?  "white_circle" : "black_circle" } />
             </svg>
             
                 
@@ -120,6 +119,7 @@ function Career({darkMode}) {
                         <Details
                         
                             scrollref={ref1}
+                            darkMode={darkMode}
                             img_path = "./img/Career/bunkasai.JPG"
                             positon="大阪府立天王寺高等学校 入学"
                             compony="大阪"
@@ -131,6 +131,7 @@ function Career({darkMode}) {
                         
                         <Details
                             scrollref={ref1}
+                            darkMode={darkMode}
                             img_path = "./img/Career/highscrool_gradu.jpg"
                             positon="大阪府立天王寺高等学校 卒業"
                             compony="大阪"
@@ -141,6 +142,7 @@ function Career({darkMode}) {
                         />
                         <Details
                             scrollref={ref1}
+                            darkMode={darkMode}
                             img_path = "./img/Career/volley.JPG"
                             positon="大阪府立大学 工学域 入学"
                             compony="大阪府"
@@ -151,6 +153,7 @@ function Career({darkMode}) {
                         />
                         <Details
                             scrollref={ref1}
+                            darkMode={darkMode}
                             img_path = "./img/Career/omu_gradu.JPEG"
                             positon="大阪府立大学 工学域 卒業"
                             compony="大阪公立大学"
@@ -162,6 +165,7 @@ function Career({darkMode}) {
                         />
                         <Details
                             scrollref={ref1}
+                            darkMode={darkMode}
                             img_path = "./img/Career/SIG_ACI.jpg"
                             positon="SIG-ACIで発表"
                             compony="京都工業繊維大学"
@@ -173,7 +177,8 @@ function Career({darkMode}) {
                             />
                             
                         <Details
-                        scrollref={ref}
+                            scrollref={ref1}
+                            darkMode={darkMode}
                             img_path = "./img/Career/entrance_ceramony_omu.jpg"
                             positon="大阪公立大学 大学院 入学"
                             compony="大阪公立大学大学院 情報学研究科"

@@ -12,7 +12,7 @@ import Career from './career'
 
 const Home = () => {
   const [count, setCount] = useState(0)
-  const [darkMode,setDarkMode] = useState(false)
+  const [darkMode,setDarkMode] = useState(true)
   const [ref, isInView] = useInView({triggerOnce:true, rootMargin:'-50px'});
   const [ref1, isInView1] = useInView({triggerOnce:true, rootMargin:'-50px'});
   const control = useAnimation();
