@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  .darkmodeparts {
+    stroke: black;
+    fill: black;
+  }
+  .white{
+    stroke: white;
+    fill: white;
+  }

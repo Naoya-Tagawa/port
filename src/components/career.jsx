@@ -2,11 +2,12 @@ import React, { useEffect, useRef } from 'react';
 import { motion, useScroll,useAnimation,useMotionValueEvent } from "framer-motion"
 import LiIcon from './contents/LiIcon';
 import '../index.css';
-
+{/*import s from '../styles/circle.css';*/}
 
 
 const Details = ({ positon, compony, companyLink, time, address, work ,img_path,darkMode,scrollref}) => {
     const ref = useRef(null);
+    
     const scrollcomponets = {
         visiable:{
             y:0,
@@ -27,7 +28,7 @@ const Details = ({ positon, compony, companyLink, time, address, work ,img_path,
     return <li ref={ ref } className={darkMode ? "dark":""}>
         <div className='flex justify-center'>
             <svg className="-rotate-90 w-[60px] h-[60px] xs:w-[40px] xs:h-[40px]" width="75" height="75" viewBox="0 0 100 100">
-                <circle cx="80" cy="53" r="20" className=" stroke-1 fill-primary items-center dark:stroke-2"/>
+                <circle cx="80" cy="53" r="20" className={darkMode ? s.darkmodeparts:s.white}/>
             </svg>
             
                 
