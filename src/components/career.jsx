@@ -120,7 +120,7 @@ function Career({darkMode}) {
                         
                             scrollref={ref1}
                             darkMode={darkMode}
-                            img_path = "./img/Career/bunkasai.jpg"
+                            img_path = "./img/Career/highschool_memory.png"
                             positon="大阪府立天王寺高等学校 入学"
                             compony="大阪"
                             time="2016"
@@ -143,7 +143,7 @@ function Career({darkMode}) {
                         <Details
                             scrollref={ref1}
                             darkMode={darkMode}
-                            img_path = "./img/Career/volley.jpg"
+                            img_path = "./img/Career/volley.png"
                             positon="大阪府立大学 工学域 入学"
                             compony="大阪府"
                             time="2019"
@@ -154,7 +154,7 @@ function Career({darkMode}) {
                         <Details
                             scrollref={ref1}
                             darkMode={darkMode}
-                            img_path = "./img/Career/omu_gradu.jpg"
+                            img_path = "./img/Career/omu_gradu.png"
                             positon="大阪府立大学 工学域 卒業"
                             compony="大阪公立大学"
                             time="2023"
