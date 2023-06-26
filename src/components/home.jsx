@@ -111,7 +111,7 @@ const Home = () => {
 
 
 
-      <section className='text-gray-700 border-t min-h-screen border-gray-200 dark:bg-gray-900 h-screen'id='about' ref={ref1}>
+      <section className='text-gray-700 border-t min-h-screen border-gray-200 dark:bg-gray-900 'id='about' ref={ref1}>
         
 
 
