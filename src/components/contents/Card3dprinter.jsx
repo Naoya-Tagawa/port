@@ -6,7 +6,7 @@ const path = "./img/3dprinter/";
 const Card3dprinter = () => {
   return (
     <Model
-      title={"視覚障碍者を対象とした3Dプリンタ操作支援システム"}
+      title={"視覚障碍者のための3Dプリンタ操作支援"}
       subtitle={"視覚障碍者が3Dプリンタを使えるように"}
       date={"May.2022 - July.2022"}
       thumbnail={path + "3dprinter.jpg"}
