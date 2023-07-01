@@ -63,13 +63,11 @@ const Home = () => {
       </head>
 
       <header className='text-gray-700 border-b border-gray-200 dark:bg-gray-900' >
-      <div className='container flex mx-auto p-5 flex-col md:flex-row items-center'> 
+      <div className='container flex mx-auto  flex-col md:flex-row md:items-center'> 
         <div className='flex items-center '>
-          <a href= "#" className='font-medium text-gray-900 mb-4 md:mb-0 '> 
-              <img src = "./img/naoyalogo.png" alt = "" className='scale-50' />
-          </a>
+          <img src = "./img/Career/naoyalogo.png" className='scale-75 md:scale-100' />
 
-          <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl mx-5 dark:bg-gray-100'/>
+          <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer scale-150  mx-0 md:mx-3 dark:bg-gray-100'/>
           
         </div>
         <nav className='md:ml-auto text-base'>
@@ -109,7 +107,7 @@ const Home = () => {
 
 
 
-      <section className='text-gray-700 border-t min-h-screen border-gray-200 dark:bg-gray-900 'id='about' ref={ref1}>
+      <section className='text-gray-700 border-t min-h-screen border-gray-200 dark:bg-gray-900 h-screen'id='about' ref={ref1}>
         
 
 
