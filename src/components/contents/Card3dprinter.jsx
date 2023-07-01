@@ -6,7 +6,7 @@ const path = "./img/3dprinter/";
 const Card3dprinter = () => {
   return (
     <Model
-      title={"視覚障碍者を対象とした3Dプリンタ操作支援システム"}
+      title={"視覚障碍者のための3Dプリンタ操作支援"}
       subtitle={"視覚障碍者が3Dプリンタを使えるように"}
       date={"May.2022 - July.2022"}
       thumbnail={path + "3dprinter.jpg"}
@@ -15,9 +15,14 @@ const Card3dprinter = () => {
         <h1>
         3Dプリンタのディスプレイ上に表示されるテキストを音声出力して操作のサポートするシステムです。理解しやすいように音声出力を工夫しています。
         </h1>
-        <a href = "https://www.youtube.com/watch?app=desktop&v=4T3aQo8mUr4&feature=youtu.be" className="text-green-500 hover:text-green-200 hover:scale-150">
-        デモ動画はこちら
-      </a>
+        <h1>
+          <a href = "https://www.youtube.com/watch?app=desktop&v=4T3aQo8mUr4&feature=youtu.be" className="text-green-500 hover:text-green-200 hover:scale-150">
+          デモ動画はこちら
+          </a>
+        </h1>
+        <a href = "https://imlab.jp/cgi-bin/publication_public.cgi?func=show_detail&id=1922&prev_func=search_result&search_year_b=2023&search_year_e=2023&lang=ja" className="text-green-500 hover:text-green-200 hover:scale-150">
+          論文はこちら
+          </a>
       </div>
       }
       skills={"Python"}

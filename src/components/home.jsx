@@ -1,15 +1,18 @@
 import { useEffect, useState ,useRef} from 'react'
-
+import '../styles/parts.css'
 import '../App.css'
 import Card3dprinter from "./contents/Card3dprinter"
-
+import Portfoliosite from './contents/portfolio'
+import Find_difference from './contents/find_difference'
 import { BsFillMoonStarsFill } from "react-icons/bs"
 import {motion , useAnimation} from "framer-motion"
-
 import { useInView } from 'react-intersection-observer';
+import './career'
+import Career from './career'
+
 const Home = () => {
   const [count, setCount] = useState(0)
-  const [darkMode,setDarkMode] = useState(false)
+  const [darkMode,setDarkMode] = useState(true)
   const [ref, isInView] = useInView({triggerOnce:true, rootMargin:'-50px'});
   const [ref1, isInView1] = useInView({triggerOnce:true, rootMargin:'-50px'});
   const control = useAnimation();
@@ -60,15 +63,11 @@ const Home = () => {
       </head>
 
       <header className='text-gray-700 border-b border-gray-200 dark:bg-gray-900' >
-      <div className='container flex mx-auto p-5 flex-col md:flex-row items-center'> 
+      <div className='container flex mx-auto  flex-col md:flex-row md:items-center'> 
         <div className='flex items-center '>
-          <a href= "#" className='font-medium text-gray-900 mb-4 md:mb-0 '> 
-            <span className='text-xl ml-3  dark:text-gray-100'>
-              Shincode
-            </span>
-          </a>
+          <img src = "./img/Career/naoyalogo.png" className='scale-75 md:scale-100' />
 
-          <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl mx-5 dark:bg-gray-100'/>
+          <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer scale-150  mx-0 md:mx-3 dark:bg-gray-100'/>
           
         </div>
         <nav className='md:ml-auto text-base'>
@@ -85,8 +84,9 @@ const Home = () => {
 
       </header>
       <body className='dark:bg-gray-900  text-gray-700'>
-      <div className='text-gray-700 mx-auto' id='home'> 
-        <div className='flex  md:mt-10 mx-auto py-20 px-20 flex-col md:flex-row items-center'>
+        
+      <div className='text-gray-700 mx-auto min-h-screen' id='home'> 
+        <div className='flex items-center justify-center py-20 md:py-0 md:h-screen mx-auto flex-col md:flex-row'>
           <div className='flex-grow  lg:pr-30 xl:w-full md:pr-15 text-center '>
             <h1 className='text-4xl md:text-5xl xl:text-8xl text-gray-900 font-medium mb-4 dark:text-gray-100' >
               ようこそ!
@@ -96,7 +96,7 @@ const Home = () => {
               このサイトでは田川直弥のことが大体わかるようになります
             </p>
           </div>
-          <div className=' w-1/2 md:ml-10 md:w-1/2 '>
+          <div className=' md:w-1/2 ml-5'>
             <img  class="hover:animate-bounce" src = "./img/denkyuinu.png" alt = "" className='scale-110' />
           </div>
 
@@ -107,7 +107,7 @@ const Home = () => {
 
 
 
-      <section className='text-gray-700 border-t border-gray-200 dark:bg-gray-900'id='about' ref={ref1}>
+      <section className='text-gray-700 border-t min-h-screen border-gray-200 dark:bg-gray-900 h-screen'id='about' ref={ref1}>
         
 
 
@@ -119,13 +119,13 @@ const Home = () => {
         
           </div>
 
-          <div className='flex container mx-auto py-5 px-5   flex-col md:flex-row items-center '>
-            <div className='mb-5 md:w-3/2 lg:max-w-lg'>
+          <div className='flex container mx-auto py-5 px-5   flex-col md:flex-row items-center justify-center'>
+            <div className='mt-10 mb-10 scale-150 md:scale-100 md:w-3/2 lg:max-w-lg'>
               <img src = "./img/door.jpg" alt = "" />
             </div>
 
           
-            <div className='md:w-1/2 flex-grow mb-16 lg:pl-10 md:pr-16 text-left  lg:text-left'>
+            <div className='md:w-1/2 flex-grow mt-10 mb-16 md:ml-10 lg:pl-10 md:pr-16 text-left  lg:text-left'>
               <p className='text-xl  text-gray-800 font-normal mb-1 dark:text-gray-100' >
                名前:田川直弥
               </p>
@@ -185,14 +185,14 @@ const Home = () => {
         
       
       <section className='dark:bg-gray-900 text-gray-700  border-t border-gray-200  'id='skills'>
-        <div className='text-center mb-20 '>
-            <hi className="text-2xl sm:text-3xl font-medium mb-2 text-gray-900 dark:text-gray-100">Skills</hi>
+        <div className='text-center py-5'>
+            <hi className="text-2xl sm:text-3xl font-medium  text-gray-900 dark:text-gray-100">Skills</hi>
         
         </div>
 
         {/*refで、useInViewでこの要素を参照するようにする。}
         {/*スキルのdivタグ   */}
-        <motion.div className='flex flex-wrap  scroll-smooth hover:scroll-auto mb-40' variants={scrollcomponets}  initial="hidden" whileInView="visiable" viewport={{once:false,amount:0}}>
+        <motion.div className='flex flex-wrap items-center justify-center md:h-screen' variants={scrollcomponets}  initial="hidden" whileInView="visiable" viewport={{once:false,amount:0}}>
             <div className='w-full md:w-1/3 p-4 '>
               <div className='bg-gray-100 rounded-lg p-8 shadow-lg hover:shadow-2xl  hover:ring-4 ring-green-500 duration-200 md:h-full items-center'>
                 <div className='flex items-center mb-3'>
@@ -213,7 +213,11 @@ const Home = () => {
                     ・Python/C++/Java
                   </p>
                   <p>
+                    ・HTML/CSS/JavaScript
+                  </p>
+                  <p>
                     ・React/Django
+                    
                   </p>
 
                 </div>
@@ -281,18 +285,18 @@ const Home = () => {
 
 
       </section>
-      <section className='dark:bg-gray-900 text-gray-700 border-t border-gray-200 py-5 mb-10'id='portfolio'>
-        <div className='text-center mb-20'>
+      <section className='text-gray-700 min-h-screen border-t border-gray-200 py-5'id='portfolio'>
+        <div className='text-center'>
             <hi className="text-2xl sm:text-3xl font-medium mb-2 text-gray-900 dark:text-gray-100">Portfolio</hi>
         
         </div>
 
 
           {/*cardのdivタグ   */}
-        <motion.div className='flex flex-wrap scroll-smooth hover:scroll-auto' variants={scrollcomponets}  initial="hidden" whileInView="visiable" viewport={{once:false,amount:0}}>
+        <motion.div className='flex flex-wrap scroll-smooth hover:scroll-auto items-center justify-center md:h-screen' variants={scrollcomponets}  initial="hidden" whileInView="visiable" viewport={{once:false,amount:0}}>
           <Card3dprinter />
-          <Card3dprinter/>
-          <Card3dprinter/>
+          <Portfoliosite />
+          <Find_difference/>
         </motion.div>
         
 
@@ -300,29 +304,23 @@ const Home = () => {
 
       </section>
 
+      
 
-      <section  className='text-gray-700 border-t border-gray-200 'id='career'>
-
-        <div className='text-center mb-20'>
-            <hi className="text-2xl sm:text-3xl font-medium mb-2 text-gray-900 dark:text-gray-100" >Career</hi>
+      <section className='text-gray-700 border-t border-gray-200 py-5 min-h-screen'id='career'>
+        <div className='text-center py-5'>
+            <hi className="text-2xl sm:text-3xl font-medium  text-gray-900 dark:text-gray-100">Career</hi>
         
         </div>
 
-        <div className='flex container mx-auto bg-gray-100 mb-20'>
-          {/*container でbreakpointを設定できmx-autoを追加すれば中央における  */}
-          <h1>
-            kk
-          </h1>
 
-        </div>
-
+        <Career
+        darkMode={darkMode}
+        />
 
       </section>
-        
-  
+
 
     
-
     
       </body>
     

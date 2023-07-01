@@ -5,10 +5,11 @@ const Model = (props) => {
     /* usestateは画面更新のために必要 */
   const [showModel, setShowModel] = React.useState(false);
   const [selectImg, setSelectImg] = React.useState(0);
+  const [showimage,setshowimage] = React.useState(props.imgPaths.length);
 
   return (
     <>
-      <div className="flex justify-center md:w-1/3 p-4 md:px-6">
+      <div className="flex justify-center  mt-10 mx-10 md:w-1/3 md:mt-0 md:mx-0 md:px-6 lg:px-6">
         <button onClick={() => setShowModel(true)}>
           <WorksCard
             title={props.title}
@@ -67,8 +68,8 @@ const Model = (props) => {
                   </div>
                 </div>
                 {/*body*/}
-                <div className="">
-                  <div className="container py-2 flex-col md:flex-row items-center flex justify-center">
+                
+                  <div className="md:container py-2 flex-col md:flex-row items-center flex justify-center">
                     <div className="md:w-1/2 mb-4 px-4 md:mr-6 text-center">
                       <div className="mb-2">
                         <h3 className="text-lg text-green-500 font-semibold">
@@ -89,6 +90,7 @@ const Model = (props) => {
                         </p>
                       </div>
                     </div>
+                    {showimage > 0 ?(
                     <div className="md:w-2/5 w-3/4 mb-4">
                       <div className="flex mx-auto mb-2 justify-center px-10">
                         <button className="p-2 hover:text-green-500 text-gray-500 duration-150" onClick={() => setSelectImg(0)}>
@@ -200,8 +202,9 @@ const Model = (props) => {
                         />
                       </div>
                     </div>
+                    ) :null}
                   </div>
-                </div>
+
               </div>
             </div>
           </div>
