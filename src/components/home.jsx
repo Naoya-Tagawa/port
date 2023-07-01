@@ -9,6 +9,8 @@ import {motion , useAnimation} from "framer-motion"
 import { useInView } from 'react-intersection-observer';
 import './career'
 import Career from './career'
+import Showname from './showname'
+import axios from 'axios'
 
 const Home = () => {
   const [count, setCount] = useState(0)
@@ -16,6 +18,7 @@ const Home = () => {
   const [ref, isInView] = useInView({triggerOnce:true, rootMargin:'-50px'});
   const [ref1, isInView1] = useInView({triggerOnce:true, rootMargin:'-50px'});
   const control = useAnimation();
+  const baseURL = "http://localhost:5000"
   const scrollcomponets = {
         visiable:{
             y:0,
@@ -107,7 +110,7 @@ const Home = () => {
 
 
 
-      <section className='text-gray-700 border-t min-h-screen border-gray-200 dark:bg-gray-900 h-screen'id='about' ref={ref1}>
+      <section className='text-gray-700 border-t min-h-screen border-gray-200 dark:bg-gray-900 min-h-screen'id='about' ref={ref1}>
         
 
 
@@ -318,6 +321,12 @@ const Home = () => {
         />
 
       </section>
+      {/*<section className='min-h-screen flex container mx-auto justify-center'>
+      <Showname/>
+
+
+      </section>
+  */}
 
 
     

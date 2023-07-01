@@ -1,23 +1,23 @@
 import React from "react";
-
+import axios from "axios";
+import { useEffect, useState ,useRef} from 'react'
 const Showname = (props) => {
-  return (
-    <div className="shadow-lg rounded-sm hover:shadow-2xl  hover:ring-4 ring-green-500 hover:scale-105 duration-200 md:h-full bg-gray-100 items-center">
-      <div className="object-contain md:h-60">
-        <img className="" src={props.imgPath} alt="" />
-      </div>
-      <div className="bg-gray-100 p-6">
-        <div className="flex items-center">
-          <h2 className="text-green-500 mx-auto mt-5 text-lg font-semibold h-10 sp:text-base sm:text-lg text-center">
-            {props.title}
-          </h2>
-        </div>
-        <div className="h-10 md:h-6 sp:text-base mb-4">
-          <p>{props.comment}</p>
-        </div>
-      </div>
-    </div>
-  );
+    const baseurl = "http://localhost:5000/naoya "
+    const [post, setPost] = useState("");
+    const handleclick = () => {
+        axios.get(baseurl).then((response)=>{
+            console.log(response.data)
+            setPost(response.data);
+        })
+      }
+
+
+    return (
+        <button onClick = {handleclick} className="shadow-lg rounded-sm hover:shadow-2xl  hover:ring-4 ring-green-500 hover:scale-105 duration-200 md:h-full bg-gray-100 items-center">
+            <p>クリックしてね!</p>
+            <p>{post}</p>
+        </button>
+    );
 };
 
 export default Showname;
