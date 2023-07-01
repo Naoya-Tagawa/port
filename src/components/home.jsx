@@ -66,9 +66,7 @@ const Home = () => {
       <div className='container flex mx-auto p-5 flex-col md:flex-row items-center'> 
         <div className='flex items-center '>
           <a href= "#" className='font-medium text-gray-900 mb-4 md:mb-0 '> 
-            <span className='text-xl ml-3  dark:text-gray-100'>
-              Naoya
-            </span>
+              <img src = "./img/naoyalogo.png" alt = "" className='scale-50' />
           </a>
 
           <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl mx-5 dark:bg-gray-100'/>
