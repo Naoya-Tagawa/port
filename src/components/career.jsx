@@ -105,9 +105,7 @@ function Career({darkMode}) {
                     className='absolute  left-1/2   w-[4px] h-full bg-gray-900 dark:bg-gray-100  origin-top'></motion.div>
                     
                     <motion.div animate={{y:scrollYProgress}}>
-                        <img
-                            src="./img/nikukyu_white.svg"
-                                        className='scale-50'/>
+                       
                     </motion.div>
                     {/*
                     
