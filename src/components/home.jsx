@@ -14,7 +14,7 @@ import bgp2 from '../assets/image/pattern-naoya-dark.png';
 
 const Home = () => {
   const [count, setCount] = useState(0)
-  const [darkMode,setDarkMode] = useState(true)
+  const [darkMode,setDarkMode] = useState(false)
   const [ref, isInView] = useInView({triggerOnce:true, rootMargin:'-50px'});
   const [ref1, isInView1] = useInView({triggerOnce:true, rootMargin:'-50px'});
   const control = useAnimation();
