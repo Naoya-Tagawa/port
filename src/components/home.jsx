@@ -23,6 +23,7 @@ const Home = () => {
             transition:{
                 duration:1.6,
                 delay:0.5,
+                ease: [0, 0.71, 0.2, 1.01]
 
             },
         },

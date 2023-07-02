@@ -82,6 +82,11 @@ const Details = ({ positon, compony, companyLink, time, address, work ,img_path,
 function Career({darkMode}) {
     const ref = useRef(null);
     const ref1 = useRef(null);
+    const { scrollY } = useScroll(
+    );
+    useMotionValueEvent(scrollY, "change", (latest) => {
+        scrollY.set(latest)
+      })
     const { scrollYProgress } = useScroll(
         {
             target: ref,
@@ -98,6 +103,17 @@ function Career({darkMode}) {
                     <motion.div
                     style={{ scaleY: scrollYProgress }}
                     className='absolute  left-1/2   w-[4px] h-full bg-gray-900 dark:bg-gray-100  origin-top'></motion.div>
+                    
+                    <motion.div animate={{y:scrollYProgress}}>
+                        <img
+                            src="./img/nikukyu_white.svg"
+                                        className='scale-50'/>
+                    </motion.div>
+                    {/*
+                    
+                
+                       これ参考になりそう                
+                    https://codesandbox.io/s/framer-motion-animatepresence-poplayout-mode-t7qxhv?from-embed=&file=/src/Input.tsx*/}
                     
 
 
