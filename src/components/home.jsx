@@ -9,6 +9,8 @@ import {motion , useAnimation} from "framer-motion"
 import { useInView } from 'react-intersection-observer';
 import './career'
 import Career from './career'
+import Showname from './showname'
+import axios from 'axios'
 
 const Home = () => {
   const [count, setCount] = useState(0)
@@ -16,6 +18,7 @@ const Home = () => {
   const [ref, isInView] = useInView({triggerOnce:true, rootMargin:'-50px'});
   const [ref1, isInView1] = useInView({triggerOnce:true, rootMargin:'-50px'});
   const control = useAnimation();
+  const baseURL = "http://localhost:5000"
   const scrollcomponets = {
         visiable:{
             y:0,
@@ -64,15 +67,11 @@ const Home = () => {
       </head>
 
       <header className='text-gray-700 border-b border-gray-200 dark:bg-gray-900' >
-      <div className='container flex mx-auto p-5 flex-col md:flex-row items-center'> 
+      <div className='container flex mx-auto  flex-col md:flex-row md:items-center'> 
         <div className='flex items-center '>
-          <a href= "#" className='font-medium text-gray-900 mb-4 md:mb-0 '> 
-            <span className='text-xl ml-3  dark:text-gray-100'>
-              Naoya
-            </span>
-          </a>
+          <img src = "./img/Career/naoyalogo.png" className='scale-75 md:scale-100' />
 
-          <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl mx-5 dark:bg-gray-100'/>
+          <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer scale-150  mx-0 md:mx-3 dark:bg-gray-100'/>
           
         </div>
         <nav className='md:ml-auto text-base'>
@@ -112,7 +111,7 @@ const Home = () => {
 
 
 
-      <section className='text-gray-700 border-t min-h-screen border-gray-200 dark:bg-gray-900 'id='about' ref={ref1}>
+      <section className='text-gray-700 border-t min-h-screen border-gray-200 dark:bg-gray-900 min-h-screen'id='about' ref={ref1}>
         
 
 
@@ -323,6 +322,12 @@ const Home = () => {
         />
 
       </section>
+      {/*<section className='min-h-screen flex container mx-auto justify-center'>
+      <Showname/>
+
+
+      </section>
+  */}
 
 
     
