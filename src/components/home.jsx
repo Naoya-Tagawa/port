@@ -3,6 +3,7 @@ import '../styles/parts.css'
 import '../App.css'
 import Card3dprinter from "./contents/Card3dprinter"
 import Portfoliosite from './contents/portfolio'
+import Onomation from './contents/onomation'
 import Find_difference from './contents/find_difference'
 import { BsFillMoonStarsFill } from "react-icons/bs"
 import {motion , useAnimation} from "framer-motion"
@@ -301,6 +302,7 @@ const Home = () => {
           <Card3dprinter />
           <Portfoliosite />
           <Find_difference/>
+          <Onomation/>
         </motion.div>
         
 
