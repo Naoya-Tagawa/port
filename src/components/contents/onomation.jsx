@@ -16,7 +16,7 @@ const Onomation = () => {
         オノマトペを入力すると、そのオノマトペに合わせたアニメーションがGPTによって生成されます。投稿したり、みんなの投稿を見たりできます。初の共同開発です。
         </h1>
         <p>
-            <a href="https://onomation-1ace.onrender.com" className="text-green-500 hover:text-green-200 hover:scale-150">  アプリのリンクはこちら </a>
+            <a href="https://onomation.yiwashita.com/" className="text-green-500 hover:text-green-200 hover:scale-150">  アプリのリンクはこちら </a>
         </p>
         <a href = "https://youtu.be/w2poy_q8Vmo" className="text-green-500 hover:text-green-200 hover:scale-150">  デモ動画はこちら </a>
       </div>
