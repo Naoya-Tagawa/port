@@ -12,7 +12,8 @@ import './career'
 import Career from './career'
 import bgp1 from '../assets/image/pattern-naoya.png';
 import bgp2 from '../assets/image/pattern-naoya-dark.png';
-
+import Bage_Rescue from './contents/bagerescue'
+import Feel_View from './contents/Feelview'
 const Home = () => {
   const [count, setCount] = useState(0)
   const [darkMode,setDarkMode] = useState(false)
@@ -298,11 +299,13 @@ const Home = () => {
 
 
           {/*cardのdivタグ   */}
-        <motion.div className='flex flex-wrap scroll-smooth hover:scroll-auto items-center justify-center md:h-screen' variants={scrollcomponets}  initial="hidden" whileInView="visiable" viewport={{once:false,amount:0}}>
+        <motion.div className='flex flex-wrap mt-5 scroll-smooth hover:scroll-auto items-center justify-center md:h-screen' variants={scrollcomponets}  initial="hidden" whileInView="visiable" viewport={{once:false,amount:0}}>
           <Card3dprinter />
           <Portfoliosite />
           <Find_difference/>
           <Onomation/>
+          <Bage_Rescue/>
+          <Feel_View/>
         </motion.div>
         
 
