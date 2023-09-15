@@ -13,7 +13,7 @@ const Bage_Rescue = () => {
       description={
         <div>
         <h1>
-        楽天グループ株式会社のハッカソン型インターンで3位入賞。フードロス軽減のため、家庭内でできるちょっとした工夫を共有するSNSアプリです。
+        R社のハッカソン型インターンで3位入賞。フードロス軽減のため、家庭内でできるちょっとした工夫を共有するSNSアプリです。
         </h1>
         <p>
             <a href="https://bage-rescue.vercel.app/" className="text-green-500 hover:text-green-200 hover:scale-150">  アプリのリンクはこちら </a>

@@ -13,7 +13,7 @@ const Feel_View = () => {
       description={
         <div>
         <h1>
-        富士フィルム株式会社のハッカソン型インターンで優勝。私の研究活動からヒントを得た視覚障碍者のための写真撮影体験を提供する事業です。ロゴも私がデザインしました!
+        F社のハッカソン型インターンで優勝。私の研究活動からヒントを得た視覚障碍者のための写真撮影体験を提供する事業です。ロゴも私がデザインしました!
         </h1>
         <p>
             <a href="https://docs.google.com/presentation/d/1oAkqnv5EIz9Hdij1j58-SA_6EIqTsRaqmhuOh5uhgas/edit?usp=sharing" className="text-green-500 hover:text-green-200 hover:scale-150">  スライドのリンクはこちら </a>
